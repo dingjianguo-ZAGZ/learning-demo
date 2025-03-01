@@ -3,7 +3,7 @@ package hash;
 import java.util.*;
 
 /**
- * 字母异位词
+ * 2.字母异位词
  * 由重新排列源单词的所有字母得到的一个新单词
  */
 public class E002groupAnagrams {
