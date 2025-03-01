@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.su.shopping_admin_service.mapper.RoleMapper">
+    <resultMap id="RoleMapper" type="com.su.shopping_common.pojo.Role">
+        <id property="rid" column="rid"/>
+        <result property="roleName" column="roleName"/>
+        <result property="roleDesc" column="roleDesc"/>
+        <collection property="permissions" column="rid" ofType="com.su.shopping_common.pojo.Permission">
+            <id property="pid" column="pid"/>
+            <result property="permissionName" column="permissionName"/>
+            <result property="url" column="url"/>
+        </collection>
+    </resultMap>
+    <select id="findById" resultMap="RoleMapper">
+        select *
+        from bz_role
+                 left join bz_role_permission on bz_role.rid = bz_role_permission.rid
+                 left join bz_permission on bz_role_permission.pid = bz_permission.pid
+        where bz_role.rid = #{rid};
+    </select>
+
+    <delete id="deleteRoleAllPermission">
+        delete
+        from bz_role_permission
+        where rid = #{rid};
+    </delete>
+    <delete id="deleteAllAdmin">
+        delete
+        from bz_admin_role
+        where rid = #{rid};
+    </delete>
+    <insert id="addPermissionToRole">
+        insert into bz_role_permission
+        values (#{rid}, #{pid});
+    </insert>
+
+</mapper>

@@ -1,0 +1,11 @@
+spring:
+  application:
+    # 应用名字
+    name: auth-service
+  cloud:
+    nacos:
+      discovery:
+        # Nacos注册中心的地址
+        server-addr:  192.168.66.102:8848
+server:
+  port: 7878

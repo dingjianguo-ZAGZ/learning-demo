@@ -1,0 +1,17 @@
+spring:
+  application:
+    # 应用名称
+    name: payment-sentinel
+  cloud:
+    sentinel:
+      transport:
+        # 控制台地址
+        dashboard: 192.168.66.102:8581
+      web-context-unify: false
+    nacos:
+      discovery:
+        #配置nacos注册中心地址
+        server-addr: 192.168.66.102:8848
+
+server:
+  port: 8787

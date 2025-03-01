@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    # 多环境配置
+    active: dev
+  application:
+    name: payment
+  cloud:
+    nacos:
+      config:
+        namespace: e1d33179-c3e1-4ae8-9de6-51f4795672b2
+        group: DEFAULT_GROUP
+        server-addr: 192.168.66.102
+        # 文件名
+        prefix: ${spring.application.name}
+        # 文件后缀
+        file-extension: yaml
+

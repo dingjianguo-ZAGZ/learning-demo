@@ -1,0 +1,10 @@
+spring:
+  elasticsearch:
+    uris: https://192.168.66.102:9200
+    username: elastic
+    password: elastic
+#日志格式
+logging:
+  pattern:
+    console: '%d{HH:mm:ss.SSS} %clr(%-5level) ---  [%-15thread] %cyan(%-50logger{50}):%msg%n'
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/itbaizhan-agent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-agent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-auth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-inteface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-inteface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-javaagent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-javaagent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-order-dubbo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-order-dubbo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-order-higress/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-order-higress/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-order/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-payment-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-payment-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-payment-dubbo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-payment-dubbo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-payment-sentinel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-payment-sentinel/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-payment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-payment/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-roketmq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itbaizhan-roketmq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

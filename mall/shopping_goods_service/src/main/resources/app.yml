@@ -1,0 +1,14 @@
+spring:
+  # redis
+  data:
+    redis:
+      host: 192.168.66.103
+      port: 6379
+      timeout: 30000
+      jedis:
+        pool:
+          max-idle: 8
+          max-wait: -1
+          max-active: 8
+          min-idle: 0
+
