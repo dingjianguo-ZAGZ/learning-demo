@@ -12,6 +12,7 @@ public class E059generateParenthesis {
     public List<String> generateParenthesis(int n) {
         //必须以“（ ”开头
         backtrack(n, 0, 0);
+        return res;
     }
 
     /**
