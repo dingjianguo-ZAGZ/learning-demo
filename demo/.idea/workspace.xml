@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bad6be2f-54fd-42b0-927c-cf79ef74b8fe" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/serializable/ExternalizeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="bad6be2f-54fd-42b0-927c-cf79ef74b8fe" name="更改" comment="使用Serializable实现Externalizable测试">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/stream/FileByteStreamTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,29 +40,44 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/GitHub/learning-demo/demo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.ExternalizeTest.executor": "Run",
-    "应用程序.SerializableTest.executor": "Run",
-    "应用程序.ServeSocketChannelDemo.executor": "Run",
-    "应用程序.fileChannel.executor": "Run",
-    "应用程序.fileChannelDemo2.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/GitHub/learning-demo/demo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.ExternalizeTest.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.ReplaceExternalizeTest.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.SerializableTest.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.ServeSocketChannelDemo.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.fileChannel.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.fileChannelDemo2.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="应用程序.ExternalizeTest">
+}</component>
+  <component name="RunManager" selected="应用程序.ReplaceExternalizeTest">
     <configuration name="ExternalizeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.su.serializable.ExternalizeTest" />
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.su.serializable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReplaceExternalizeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.su.serializable.ReplaceExternalizeTest" />
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -101,19 +115,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="fileChannel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.su.NIO.fileChannel" />
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.su.NIO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="fileChannelDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.su.NIO.fileChannelDemo2" />
       <module name="demo" />
@@ -129,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ReplaceExternalizeTest" />
         <item itemvalue="应用程序.ExternalizeTest" />
         <item itemvalue="应用程序.SerializableTest" />
         <item itemvalue="应用程序.ServeSocketChannelDemo" />
         <item itemvalue="应用程序.fileChannelDemo2" />
-        <item itemvalue="应用程序.fileChannel" />
       </list>
     </recent_temporary>
   </component>
@@ -155,11 +156,34 @@
       <updated>1725693703089</updated>
       <workItem from="1731572095006" duration="3578000" />
       <workItem from="1736140683967" duration="4000" />
-      <workItem from="1741926808981" duration="3556000" />
+      <workItem from="1741926808981" duration="8263000" />
+      <workItem from="1741949189784" duration="1049000" />
     </task>
+    <task id="LOCAL-00001" summary="序列化测试">
+      <option name="closed" value="true" />
+      <created>1741931966281</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741931966281</updated>
+    </task>
+    <task id="LOCAL-00002" summary="使用Serializable实现Externalizable测试">
+      <option name="closed" value="true" />
+      <created>1741939947963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741939947963</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="序列化测试" />
+    <MESSAGE value="使用Serializable实现Externalizable测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用Serializable实现Externalizable测试" />
   </component>
 </project>
