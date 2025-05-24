@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bad6be2f-54fd-42b0-927c-cf79ef74b8fe" name="更改" comment="测试内存字节流">
-      <change afterPath="$PROJECT_DIR$/springdemo/src/main/java/com/su/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springdemo/src/main/java/com/su/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springdemo/src/main/java/com/su/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springdemo/src/main/java/com/su/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springdemo/src/main/java/com/su/test/ApplicationContextTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springdemo/src/main/java/com/su/test/BeanFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springdemo/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springdemo/src/main/resources/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/stream/DataOperationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/stream/PipeByteStreamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bad6be2f-54fd-42b0-927c-cf79ef74b8fe" name="更改" comment="测试使用xml配置bean的创建">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/BIO/BIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/BIO/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/su/BIO/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdemo/src/main/java/com/su/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdemo/src/main/java/com/su/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdemo/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springdemo/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +52,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/GitHub/learning-demo/demo/springdemo/src/main/resources",
+    "last_opened_file_path": "E:/GitHub/learning-demo/demo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,6 +61,8 @@
     "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true",
     "应用程序.ApplicationContextTest.executor": "Run",
+    "应用程序.BIO.executor": "Run",
+    "应用程序.Client.executor": "Run",
     "应用程序.DataOperationTest.executor": "Run",
     "应用程序.ExternalizeTest.executor": "Run",
     "应用程序.FileByteStreamTest.executor": "Run",
@@ -76,6 +71,8 @@
     "应用程序.ReplaceExternalizeTest.executor": "Run",
     "应用程序.SerializableTest.executor": "Run",
     "应用程序.ServeSocketChannelDemo.executor": "Run",
+    "应用程序.Server.executor": "Run",
+    "应用程序.ServerTest.executor": "Run",
     "应用程序.fileChannel.executor": "Run",
     "应用程序.fileChannelDemo2.executor": "Run"
   }
@@ -92,7 +89,7 @@
       <recent name="com.su.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ApplicationContextTest">
+  <component name="RunManager" selected="应用程序.Server">
     <configuration name="ApplicationContextTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.su.test.ApplicationContextTest" />
       <module name="springdemo" />
@@ -106,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataOperationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.su.stream.DataOperationTest" />
+    <configuration name="BIO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.su.BIO.BIO" />
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.su.stream.*" />
+          <option name="PATTERN" value="com.su.BIO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileByteStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.su.stream.FileByteStreamTest" />
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.su.BIO.Client" />
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.su.stream.*" />
+          <option name="PATTERN" value="com.su.BIO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemoryByteStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.su.stream.MemoryByteStream" />
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.su.BIO.Server" />
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.su.stream.*" />
+          <option name="PATTERN" value="com.su.BIO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PipeByteStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.su.stream.PipeByteStreamTest" />
+    <configuration name="ServerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.su.BIO.ServerTest" />
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.su.stream.*" />
+          <option name="PATTERN" value="com.su.BIO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Server" />
+        <item itemvalue="应用程序.BIO" />
+        <item itemvalue="应用程序.Client" />
+        <item itemvalue="应用程序.ServerTest" />
         <item itemvalue="应用程序.ApplicationContextTest" />
-        <item itemvalue="应用程序.DataOperationTest" />
-        <item itemvalue="应用程序.PipeByteStreamTest" />
-        <item itemvalue="应用程序.MemoryByteStream" />
-        <item itemvalue="应用程序.FileByteStreamTest" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +192,9 @@
       <workItem from="1736140683967" duration="4000" />
       <workItem from="1741926808981" duration="8263000" />
       <workItem from="1741949189784" duration="5229000" />
-      <workItem from="1742039671504" duration="1230000" />
+      <workItem from="1742039671504" duration="3501000" />
+      <workItem from="1742100781646" duration="384000" />
+      <workItem from="1742472443175" duration="4098000" />
     </task>
     <task id="LOCAL-00001" summary="序列化测试">
       <option name="closed" value="true" />
@@ -237,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741951779323</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="测试使用xml配置bean的创建">
+      <option name="closed" value="true" />
+      <created>1742043095733</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742043095733</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +255,18 @@
     <MESSAGE value="使用Serializable实现Externalizable测试" />
     <MESSAGE value="测试文件字节流" />
     <MESSAGE value="测试内存字节流" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试内存字节流" />
+    <MESSAGE value="测试使用xml配置bean的创建" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试使用xml配置bean的创建" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/su/NIO/fileChannelDemo2.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

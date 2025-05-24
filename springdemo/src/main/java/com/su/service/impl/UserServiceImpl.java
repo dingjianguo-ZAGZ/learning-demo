@@ -1,11 +1,21 @@
 package com.su.service.impl;
 
-import com.su.dao.UserDao;
+import com.su.mapper.UserMapper;
+import com.su.pojo.User;
 import com.su.service.UserService;
 
+import java.util.List;
+
 public class UserServiceImpl implements UserService {
-    //提供set方法，beanFactory调用该方法，获得UserDao设置到此处
-    public void setUserDao(UserDao userDao){
-        System.out.println("beanFactory调用该方法，获得UserDao"+userDao);
+    private UserMapper userMapper;
+
+    public void setUserMapper(UserMapper userMapper) {
+        this.userMapper = userMapper;
+    }
+
+    @Override
+    public void show(){
+        List<User> userList = userMapper.findAll();
+        userList.forEach(user -> System.out.println(user));
     }
 }
