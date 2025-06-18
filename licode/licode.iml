@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/licode/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/loop3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/loop3/array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/redo" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

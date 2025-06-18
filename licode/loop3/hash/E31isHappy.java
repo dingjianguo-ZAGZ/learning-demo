@@ -6,7 +6,6 @@ import java.util.Map;
 public class E31isHappy {
     Map<Integer, Integer> map = new HashMap<>();
     public boolean isHappy(int n) {
-        int sum = 0;
         while (n != 1 && !map.containsKey(n)) {
             map.put(n, 1);
             n = getNum(n);
